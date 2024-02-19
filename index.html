@@ -4,8 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/scss/bootstrap.scss">
+    <link rel="stylesheet" href="style.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js" defer></script>
+    <script src="script-crud.js" defer></script>
 </head>
-<body>
-    
+<body class="container-fluid" >
+    <main class="row">
+        <nav class="navbar navbar-expand-lg nav-bar-color col-md-2 flex-column vh-100">
+            <h2 class="text-light">Listas</h2>
+
+            <ul class="list-group list-group-flush  fs-4 mt-5  w-100">
+                <li class="list-group-item w-100 text-center text-light">tarefa 1</li>
+               
+                <li class="list-group-item w-100 text-center text-light">tarefa 2</li>
+                
+                <li class="list-group-item w-100 text-center text-light">tarefa 3</li>
+            </ul>
+            <button type="button" class="btn nav-bar-color position-fixed bottom-0 text-light">Nova Lista</button>
+        </nav>
+        
+        <section class="col-md-10 ">
+            <h1 class="text-center ">Tarefas</h1>
+            <textarea name="" id="" cols="30" rows="2" placeholder="Adicionar uma Tarefa"></textarea>
+        </section>
+    </main>
+   
 </body>
 </html>
